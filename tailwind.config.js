@@ -17,7 +17,8 @@ export default {
         'default-secondary-cta': '#fff',
         'default-secondary-cta-border': '#EAEAEA',
         'hover-secondary-cta': '#F1F1F1',
-        'heading-green': '#2DA950'
+        'heading-green': '#2DA950',
+        'disabled': '#C9C9C9'
       },
       spacing:{
         '100': '100%',

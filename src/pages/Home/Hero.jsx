@@ -6,15 +6,19 @@ import Button from "../../components/Button";
 import Carousel from "./Carousel";
 import { FaPlus } from "react-icons/fa6";
 import Footer from "../../components/Footer";
+import Heading from "../../components/Heading";
 const Hero = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <section className="py-10 space-y-12">
       <div className=" max-w-fit w-full mx-auto">
         <div className="flex flex-col justify-center space-y-2 text-center">
-          <h2 className="text-4xl font-secondary text-heading-green">
+          {/* <h2 className="text-4xl font-secondary text-heading-green">
             Success{" "}
-          </h2>
+          </h2> */}
+          <Heading className="text-heading-green">
+            Success
+          </Heading>
           <p className="text-5xl font-primary font-semibold">
             Every success journey
             <br />
@@ -92,9 +96,12 @@ const Hero = () => {
         <div className=" py-20 my-4 rounded-3xl flex justify-between flex-wrap px-4 ask-question">
           <div>
             <div className="ml-20">
-              <h2 className="text-3xl font-secondary text-[#9E9D9D]">
+              {/* <h2 className="text-3xl font-secondary text-[#9E9D9D]">
                 What’s on your mind
-              </h2>
+              </h2> */}
+              <Heading textSize="3xl" className="text-[#9E9D9D]">
+              What’s on your mind
+              </Heading>
               <span className="text-nowrap font-primary font-semibold text-5xl ">
                 Ask Question
               </span>

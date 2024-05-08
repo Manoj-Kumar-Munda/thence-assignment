@@ -4,7 +4,7 @@ import Header from "../components/Header";
 
 const Layout = () => {
   return (
-    <div className="max-w-screen-2xl mx-4">
+    <div className="min-h-screen max-w-screen-2xl mx-4">
       <Header />
       <Outlet />
     </div>
