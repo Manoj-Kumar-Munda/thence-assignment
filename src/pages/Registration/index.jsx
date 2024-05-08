@@ -85,16 +85,7 @@ const RegistrationPage = () => {
                 placeholder="Enter your email"
               />
 
-              {error?.email && (
-                <ErrorText>{error.email}</ErrorText>
-                // <div className=" mt-2 flex items-center gap-2">
-                //     <img src={Inavlid} />
-
-                //   <span className="text-[#FF0808] font-primary text-sm font-medium">
-                //     {error.email}
-                //   </span>
-                // </div>
-              )}
+              {error?.email && <ErrorText>{error.email}</ErrorText>}
             </div>
           </div>
 

@@ -21,6 +21,7 @@ export default {
         'disabled': '#C9C9C9'
       },
       spacing:{
+
         '100': '100%',
         '200': '200%',
         '300': '300%'

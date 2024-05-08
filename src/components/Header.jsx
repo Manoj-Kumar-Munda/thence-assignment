@@ -7,7 +7,6 @@ import Button from "./Button";
 
 const Header = () => {
   const { pathname: path } = useLocation();
-  console.log(path);
   return (
     <header
       className={`${
@@ -30,7 +29,9 @@ const Header = () => {
             <Button btnType="primary-cta">Meet your candiadates</Button>
           </div>) :(
             <div className="border rounded-full p-2">
+              <Link to={"/"}>
                 <img src={cross} className="w-6 h-6"/>
+              </Link>
             </div>
           )
         }
