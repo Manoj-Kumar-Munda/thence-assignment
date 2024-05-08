@@ -8,7 +8,10 @@
 
 .ask-question{
     background: url('./assets/Union-bg.png') no-repeat  left bottom,#E8EEE7 ;
-    background-size: 300px;
-    
-    
+    background-size: 300px;   
+}
+
+.layout{
+    display: grid;
+    grid-template-rows: auto 1fr;
 }

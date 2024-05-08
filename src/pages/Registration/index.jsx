@@ -7,9 +7,9 @@ import Success from "./Success";
 
 const RegistrationPage = () => {
   const [user, setUser] = useState({ name: "", email: "" });
-  const [error, setError] = useState({ name: null, email:null });
+  const [error, setError] = useState({ name: null, email: null });
   const [isBtnDisabled, setIsBtnDisabled] = useState(true);
-  const [isSubmitted, setIsSubmitted] = useState(true);
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const onChangeName = (e) => {
     setUser((prev) => {
@@ -32,12 +32,13 @@ const RegistrationPage = () => {
       });
       setIsBtnDisabled(true);
       return;
-    }
-
-    setError((prev) => {
+    } else {
+      setError((prev) => {
         return { ...prev, email: null };
       });
-    
+    }
+
+    setIsSubmitted(true);
   };
 
   useEffect(() => {
@@ -49,8 +50,8 @@ const RegistrationPage = () => {
     }
   }, [user]);
 
-  if(isSubmitted){
-    return <Success />
+  if (isSubmitted) {
+    return <Success />;
   }
 
   return (
@@ -85,13 +86,10 @@ const RegistrationPage = () => {
               />
 
               {error?.email && (
-                <ErrorText>
-                    {error.email}
-                </ErrorText>
+                <ErrorText>{error.email}</ErrorText>
                 // <div className=" mt-2 flex items-center gap-2">
                 //     <img src={Inavlid} />
 
-            
                 //   <span className="text-[#FF0808] font-primary text-sm font-medium">
                 //     {error.email}
                 //   </span>

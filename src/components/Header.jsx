@@ -12,7 +12,7 @@ const Header = () => {
     <header
       className={`${
         path === "/registration" ? "" : "border"
-      } rounded-full  py-4`}
+      } rounded-full`}
     >
       <nav className="flex justify-between items-center mx-4 py-4">
         <div className="ml-2">
