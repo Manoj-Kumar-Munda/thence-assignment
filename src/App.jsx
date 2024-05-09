@@ -2,6 +2,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import HomePage from "./pages/Home";
 import Layout from "./Layout/Layout";
 import RegistrationPage from "./pages/Registration";
+import { AppContextProvider } from "./context/appContext";
+
+
 
 const router = createBrowserRouter([
   {
@@ -10,20 +13,22 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <HomePage />
+        element: <HomePage />,
       },
       {
         path: "/registration",
-        element: <RegistrationPage />
-      }
-    ]
+        element: <RegistrationPage />,
+      },
+    ],
   },
 ]);
 
 function App() {
   return (
     <>
-      <RouterProvider router={router} />
+      <AppContextProvider>
+        <RouterProvider router={router} />
+      </AppContextProvider>
     </>
   );
 }

@@ -2,17 +2,24 @@ import React, { useEffect, useState } from "react";
 import Tick from "../../assets/Tick.png";
 import Heading from "../../components/Heading";
 import { useNavigate } from "react-router-dom";
+import useAppContext from "../../context/appContext";
 
 const Success = () => {
   const [countdown, setCountdown] = useState(5);
   const navigate = useNavigate();
+  const { setShowRedirectBtn } = useAppContext();
 
   useEffect(() => {
+    setShowRedirectBtn(false);
     const countdownInterval = setInterval(() => {
       setCountdown((prevCountdown) => prevCountdown - 1);
     }, 1000);
 
-    return () => clearInterval(countdownInterval);
+
+    return () => { 
+      clearInterval(countdownInterval);
+      setShowRedirectBtn(true);
+    };
   }, []);
 
   useEffect(() => {

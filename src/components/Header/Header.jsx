@@ -1,12 +1,16 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../assets/logo.png";
-import cross from "../assets/Close.png";
-import Button from "./Button";
+import logo from "../../assets/logo.png";
+import cross from "../../assets/Close.png";
+import Button from "../Button";
+import useAppContext from "../../context/appContext";
 
 
 const Header = () => {
   const { pathname: path } = useLocation();
+
+  const {showRedirectBtn} = useAppContext();
+  console.log(showRedirectBtn);
   return (
     <header
       className={`${
@@ -22,13 +26,13 @@ const Header = () => {
 
         {
             path !== '/registration' ?
-          (<div className="flex gap-4">
+          (<div className="hidden  sm:flex gap-4">
             <Link to={"/registration"}>
               <Button btnType="secondary-cta">Get Projects</Button>
             </Link>
             <Button btnType="primary-cta">Meet your candiadates</Button>
           </div>) :(
-            <div className="border rounded-full p-2">
+            <div className={`border rounded-full p-2 ${ !showRedirectBtn && 'hidden'}`}>
               <Link to={"/"}>
                 <img src={cross} className="w-6 h-6"/>
               </Link>

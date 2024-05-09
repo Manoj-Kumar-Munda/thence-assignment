@@ -4,7 +4,6 @@ import rocket from "../../assets/rocket.png";
 import rightArrow from "../../assets/arrow.png";
 import Button from "../../components/Button";
 import Carousel from "./Carousel";
-import Footer from "../../components/Footer";
 import Heading from "../../components/Heading";
 import Accordion from "../../components/Accordion";
 const Hero = () => {
@@ -104,8 +103,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-
-      <Footer />
     </section>
   );
 };

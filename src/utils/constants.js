@@ -26,3 +26,9 @@ export const qnaContents = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
 ];
+
+export const heroTexts = [
+  "Enhance fortune 50 company’s insights teams research capabilities",
+  "Enhance fortune 50 company’s insights teams research capabilities.....",
+  "Enhance fortune 50 company’s insights teams research capabilities..",
+];
