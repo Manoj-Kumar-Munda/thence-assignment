@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { heroTexts } from "../../utils/constants";
 
-
 const Carousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+
 
   useEffect(() => {
     let timer = setInterval(() => {
@@ -28,7 +28,9 @@ const Carousel = () => {
     <div className="flex flex-col gap-y-4">
       <div className=" relative w-60 overflow-hidden">
         <div
-          className={`relative flex transition-all duration-300 -translate-x-${activeIndex*100}`}
+          className={`relative flex transition-all duration-300 -translate-x-${
+            activeIndex * 100
+          }`}
         >
           {heroTexts.map((item, index) => (
             <div className="shrink-0 w-full my-4" key={item}>
