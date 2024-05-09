@@ -42,7 +42,6 @@ const RegistrationPage = () => {
   };
 
   useEffect(() => {
-    console.log(user);
     if (!user.name || !user.email) {
       setIsBtnDisabled(true);
     } else {
