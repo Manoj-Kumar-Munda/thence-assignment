@@ -29,12 +29,10 @@ const Hero = () => {
             />
           </div>
 
-          <div className="absolute top-10 -left-24 shadow-xl rounded-xl bg-white px-6 py-5 space-y-1">
-            <h1 className="font-switzer text-5xl font-medium" contentEditable>40%</h1>
-            <p className="text-xs text-[#828282] font-medium" contentEditable>
-              Achieved reduction in <br /> project execution time <br /> by
-              optimising team <br />
-              availability
+          <div className="absolute top-10 -left-24 shadow-xl rounded-xl w-40 bg-white px-6 py-5 space-y-1">
+            <h1 className="font-switzer text-5xl font-medium">40%</h1>
+            <p className="text-xs text-[#828282] font-medium">
+              Achieved reduction in project execution time by optimising team availability
             </p>
           </div>
 
@@ -43,7 +41,7 @@ const Hero = () => {
               <img src={rocket} className="w-6 aspect-square" />
             </div>
             <div className="flex flex-col pr-2">
-              <h2 className="font-primary font-bold" contentEditable>10 DAYS</h2>
+              <h2 className="font-primary font-bold">10 DAYS</h2>
               <span className="text-xs font-medium text-[#828282]">
                 Staff Deployment
               </span>
@@ -52,7 +50,7 @@ const Hero = () => {
 
           <div className="absolute shadow-xl -bottom-5 -right-10 rounded-xl bg-[#002E18] p-4 space-y-2">
             <h1 className="space-x-1">
-              <span className="text-white text-4xl font-medium font-switzer" contentEditable>
+              <span className="text-white text-4xl font-medium font-switzer">
                 $0.5
               </span>
               <span className="text-gray-400 font-medium text-base font-switzer ">
