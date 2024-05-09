@@ -43,8 +43,8 @@ const Header = () => {
         )}
       </nav>
 
-      {smMenuOpen && (
-        <div className="absolute border my-2 z-10  py-6 top-full w-full  bg-white shadow-lg rounded-3xl">
+      {( smMenuOpen && path==="/") && (
+        <div className="sm:hidden absolute border my-2 z-10  py-6 top-full w-full  bg-white shadow-lg rounded-3xl">
           <div className="flex flex-col items-center gap-y-4">
             <NavLinks />
           </div>
