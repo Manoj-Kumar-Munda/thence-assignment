@@ -3,7 +3,7 @@ import hero from "../../assets/image-1.png";
 import rocket from "../../assets/rocket.png";
 import rightArrow from "../../assets/arrow.png";
 import Button from "../../components/Button";
-import Carousel from "./Carousel";
+import Carousel from "../../components/Carousel";
 import Heading from "../../components/Heading";
 import Accordion from "../../components/Accordion";
 const Hero = () => {
