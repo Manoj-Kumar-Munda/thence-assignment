@@ -5,7 +5,6 @@ import rightArrow from "../../assets/arrow.png";
 import Button from "../../components/Button";
 import Carousel from "../../components/Carousel";
 import Heading from "../../components/Heading";
-import Accordion from "../../components/Accordion";
 const Hero = () => {
   return (
     <section className="py-10 space-y-12">
@@ -32,7 +31,8 @@ const Hero = () => {
           <div className="absolute top-10 -left-24 shadow-xl rounded-xl w-40 bg-white px-6 py-5 space-y-1">
             <h1 className="font-switzer text-5xl font-medium">40%</h1>
             <p className="text-xs text-[#828282] font-medium">
-              Achieved reduction in project execution time by optimising team availability
+              Achieved reduction in project execution time by optimising team
+              availability
             </p>
           </div>
 
@@ -79,25 +79,6 @@ const Hero = () => {
                 </div>
               </Button>
             </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="">
-        <div className=" py-20 my-4 rounded-3xl flex justify-between flex-wrap gap-y-4 px-4 ask-question">
-          <div className="basis-1/2 flex-grow text-center sm:text-start sm:px-4">
-            <div className="">
-              <Heading textSize="3xl" className="text-[#9E9D9D]">
-                What’s on your mind
-              </Heading>
-              <span className="text-nowrap font-primary font-semibold text-4xl ">
-                Ask Question
-              </span>
-            </div>
-          </div>
-
-          <div className="basis-1/2 min-w-96 flex-grow">
-            <Accordion />
           </div>
         </div>
       </div>
