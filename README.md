@@ -12,7 +12,7 @@ Technologies Used:
 
 #How to Run:
 1. Clone the repository:
-  git clone https://github.com/yourusername/react-assignment.git
+  git clone (https://github.com/Manoj-Kumar-Munda/thence-assignment.git)
 
 2. Navigate to the project directory:
     cd react-assignment
