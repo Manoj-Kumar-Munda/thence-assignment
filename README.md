@@ -10,34 +10,6 @@ Technologies Used:
 - Context API
 - Vite
 
-
-#Project Structure:
-react-assignment/
-│
-├── public/
-│   ├── index.html
-│   └── ...
-│
-├── src/
-│   ├── components/
-│   │   ├── Component1.js
-│   │   ├── Component2.js
-│   │   └── ...
-│   ├── contexts/
-│   │   ├── AppContext.js
-│   │   └── ...
-│   ├── pages/
-│   │   ├── Home
-    |   |    ├──index.js
-│   │   ├── About
-    |          ├──index.js
-│   │   
-│   ├── App.js
-│   ├── index.js
-│   └── ...
-│
-├── README.md
-└── ...
 #How to Run:
 1. Clone the repository:
   git clone https://github.com/yourusername/react-assignment.git
